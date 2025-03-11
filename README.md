@@ -4,3 +4,5 @@ clip_match_1：本代码用于将指定文件夹中的图像（图像来源于�
 clip_match_2:本代码使用CLIP模型将Excel文件中的文章内容与对应的图片进行匹配，并将匹配结果保存到指定的文件夹中。
 
 clip_classify:本代码使用CLIP模型对图片进行分类（统计图、流程图等），并将符合相似度阈值的图片移动到指定文件夹中。
+
+scrawl01:本代码旨在通过多个SCI-Hub镜像网站下载DOI对应的PDF文件。它首先读取一个Excel文件中的DOI列表（从web of science导出），然后尝试从不同的SCI-Hub网址下载每个DOI对应的论文PDF。
