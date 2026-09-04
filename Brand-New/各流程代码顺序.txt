@@ -1,0 +1,31 @@
+爬虫阶段：
+cnki 爬取CNKI的pdf论文
+cnkiforexcel 爬取CNKI的题录信息
+
+pdf处理阶段：
+pdf_correct 修正pdf名称（网盘上下载下来，解压偶尔有误）
+delete_repeated 删除重复pdf论文
+no_keywords 移动无关键词的pdf论文
+
+pdf解析阶段：
+将pdf在AutoDL服务器上进行处理
+
+excel处理阶段：
+merge_excel 合并各个excel文件
+CLC_trans 中图分类号转义
+
+图文匹配阶段：
+0000755 先处理异常文件
+create_txt 创建空txt文件
+match/match_en 匹配图文对
+together 图文对取出
+txt_limit/txt_limit_en 限制字符数量
+delete_empty 删除空文件夹
+create_excel 创建图文对表格
+match_excel 匹配图文对信息
+
+其他可能的处理：
+move_out 图文对从子文件夹移动 
+final_excel 再次根据已有图片生成最终excel信息
+move 子类文件夹移动到父类
+rename 路径过长来修改文件名
